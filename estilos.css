@@ -1,0 +1,596 @@
+/* Rodrigo Juarez */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #EBEBEB;
+    color: #000000;
+    font-family: Verdana, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    align-self: flex-start;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+p {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+a { 
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.red {
+    color: #ff0000;
+}
+
+.bg-grey {
+    background-color: #EBEBEB;
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.productoClase {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#mainContainer {
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1536px;  
+}
+
+/* Header Inicio */
+header {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+header > h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 8rem;
+    padding: 40px;
+}
+
+#horns {
+    width: 25px;
+}
+
+.dropdown-menu {
+    background-color: #000000;
+}
+
+.dropdown-item {
+    color: #FFFFFF;
+}
+
+.dropdown-item:hover {
+    background-color: #222222;
+    color: #FFFFFF
+}
+
+/* Header Fin */
+
+/* Main Inicio */
+#flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main {
+    flex: 3;
+    padding: 10px;
+}
+
+main > h2 {
+    padding: 10px;
+    font-size: 18.72px;
+}
+
+main > article {
+    padding: 10px 0;
+    border-bottom: 1px solid #000000;  
+}
+
+main > article:last-child {
+    border-bottom: none;
+}
+
+article > h2 {
+    padding: 10px 0;
+    font-weight: 300;
+}
+
+.fa-calendar {
+    color: #AAAAAA;
+    padding-right: 5px;
+}
+
+time {
+    color: #AAAAAA;
+    font-size: 13px;
+}
+
+.flexArticle {
+    display: flex;
+    margin-top: 10px;
+}
+
+.imgArticle {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    min-width: 0;
+}
+
+.textArticle {
+    flex: 1;
+}
+/* Main Fin */
+
+/* Aside Inicio */
+aside {
+    flex: 1;
+    padding: 10px;
+}
+
+aside > h3 {
+    background-color: #EBEBEB;
+    font-size: 1.18rem;
+}
+
+.flexAlbum {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flexInfo {
+    display: flex;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+.flexInfo:last-child {
+    border-bottom: none;
+}
+
+aside > div > article {
+    padding: 20px 0;
+}
+
+aside > div > article > a > img {
+    -webkit-box-shadow: 5px 5px 15px 1px #000000; 
+    box-shadow: 5px 5px 15px 1px #000000;
+    flex: 1;
+    margin-right: 10px;
+    max-width: 125px;
+}
+
+.resenia {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.resenia > h2, h3 {
+    font-size: 13px;
+    padding: 2px 0;
+}
+/* Aside Fin */
+
+/* Footer Inicio */
+footer {
+    background-color: #000000;
+    color: #A7A7A7;
+    font-family: 'Pathway Gothic One', sans-serif;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer > h2 {
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+#flex-nav2 {
+    border-bottom: 1px solid #FFFFFF;
+    display: flex;
+    font-size: 22px;
+    justify-content: center;
+    padding-bottom: 20px;
+
+}
+
+#flex-nav2 > a {
+    color: #A7A7A7;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+#flex-nav2 > a:hover {
+    color: #ff0000;
+}
+
+#mail {
+    color: #A7A7A7;
+    padding-top: 20px;
+}
+
+
+#mail > a > i {
+    padding: 0 10px;
+}
+
+
+#mail > a {
+    color: #A7A7A7;
+}
+ 
+#mail > a:hover {
+    color: #ff0000;
+}
+
+/* Footer Fin */
+
+/* detalle.html Inicio */
+.flexArticleDetalle {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+/* detalle.html Fin */
+
+/* Estilos para cada página de reseña Inicio*/
+#flexResenia {
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 10px 0;   
+}
+
+#flexResenia > img {
+    border: 5px solid #000000;
+    flex: 1;
+    margin-right: 30px;
+    max-width: 400px;
+}
+
+.dataAlbum {
+    flex: 1;
+}
+
+.dataAlbum > h2, h3 {
+    padding-left: 0;
+}
+
+.dataAlbum > ol {
+    padding-left: 0;
+}
+
+.nombreDisco {
+    color: #222222;
+    font-size: 18.72px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.strongEmGrey {
+    color: #222222;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.greyBold {
+    color: #222222;
+    font-weight: bold;
+}
+
+.puntaje {
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+
+.pagination, .page-link {
+    border: none;
+    background-color: #000000;
+    margin: 0;
+}
+
+.page-link {
+    color: #ffffff;
+}
+
+.page-link:hover {
+    color: #ff0000;
+    background-color: #000000;
+}
+
+.puntaje h3 {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+ol {
+    list-style: decimal inside none;
+}
+
+ol > li {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.textoResenia {
+    margin: 10px 0;    
+}
+
+#iframe {
+    padding: 10px 0;
+}
+/* Estilos para cada página de reseña Fin */
+
+/* discos.html Inicio */
+#flexDiscos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+main > #flexDiscos > article {
+    max-width: 230px;
+}
+
+main > #flexDiscos > article > a > img {
+    border: 5px solid #000000;
+}
+
+main > #flexDiscos > article > a > img:hover  {
+    border: 5px solid #ff0000;
+}
+
+.strongEm {
+    font-style: italic;
+    font-weight: bold;
+    padding: 2px 0;
+}
+
+#flexDiscos > .review > h1, h2 {
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+#flexDiscos > .review > h1 {
+    margin-top: 10px;
+}
+/* discos.html Fin */
+
+/* merch.html Inicio */
+#prodAgregar {
+    background-color: #ED4634;
+    color: #FFFFFF;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+}
+
+#merchContainer {
+    color: #000000;
+    text-align: center;
+}
+
+.producto {
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    padding: 20px;    
+    transition: transform .4s;
+}
+
+.producto:hover {
+    background-color: #A7A7A7;
+    transform: scale(1.02)
+}
+
+.imagenProducto {
+    min-height: 150px;
+}
+
+.imagenProducto {
+    min-height: 150px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.imgCanvas {
+    width: 50px;
+}
+
+.offcanvas-header {
+    background-color: #ED4634;
+    color: #FFFFFF;
+}
+
+/* merch.html Fin */
+
+/* Media queries Inicio */
+/* Dispositivos entre 768px y 1024px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    #mainContainer {
+        max-width: 100%;
+    }
+
+    #flexContainer {
+        flex-direction: column;
+    }
+
+    aside {
+        padding-top: 0;
+    }
+
+    aside > article {
+        display: inline-block;
+    }
+
+    .flexAlbum {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #flexDiscos {
+        flex-direction: row;
+    }
+
+    .flexInfo {
+        width: 250px;
+        border: none;
+    }
+
+    main > #flexDiscos > div {
+        max-width: 400px;
+    }
+
+}
+
+/* Dispositivos entre 320px y 767px */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    header > h1 {
+        font-size: 5rem;
+        padding: 20px;
+    }
+
+    #flexContainer {
+        flex-direction: column;
+    }
+
+    .flexArticle {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .flexAlbum {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .flexInfo {
+        width: 250px;
+        border: none;
+    }
+
+    aside {
+        padding-top: 0;
+    }
+
+    aside > div > article > a > img {
+        min-width: 0;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+}
+
+/* Dispositivos hasta 319px */
+@media screen and (max-width: 319px) {
+
+    html {
+        word-break: break-all;
+    }
+
+    header > h1 {
+        font-size: 2.5rem;
+        padding: 5px;
+    }
+    
+    #flexContainer {
+        flex-direction: column;
+    }
+    
+    #main-nav {
+        position: sticky;
+        top: 0;
+    }
+
+    .flexArticle {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .flexAlbum {
+        align-items: center;
+    }
+    
+    .flexInfo {
+    border: none;
+    }
+    
+    .resenia {
+        display: none;
+    }
+    
+    aside {
+        padding-top: 0;
+    }
+    
+    aside > div > article > a > img {
+        max-width: 180px;
+    }
+    
+    #flex-nav2 {
+        flex-direction: column;
+        }
+    
+    #flex-nav2 > a {
+        padding: 20px;
+    }
+    
+    iframe {
+        width: 100%;
+    }    
+
+}
+/* Media queries Fin */
