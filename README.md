@@ -7,10 +7,10 @@ Universidad Argentina de la Empresa - Web Development Final Project
 
 https://rjuarez1903.github.io/heavy/
 
-Key Technologies used
-HTML
-CSS
-JavaScript 
-Bootstrap
+## Key Technologies used
+- HTML
+- CSS
+- JavaScript 
+- Bootstrap
 
 © 2021 Made by Rodrigo Juarez
