@@ -5,7 +5,7 @@
 
 Universidad Argentina de la Empresa - Web Development Final Project
 
-https://rjuarez1903.github.io/heavy/
+https://heavy-uade.web.app/
 
 ## Key Technologies used
 - HTML
