@@ -13,4 +13,4 @@ https://rjuarez1903.github.io/heavy/
 - JavaScript 
 - Bootstrap
 
-© 2021 Made by Rodrigo Juarez
+© 2022 Made by Rodrigo Juarez
