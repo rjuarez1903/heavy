@@ -426,7 +426,8 @@ main > #flexDiscos > article > a > img:hover  {
 
 .producto:hover {
     background-color: #A7A7A7;
-    transform: scale(1.02)
+    transform: scale(1.02);
+    z-index: 100;
 }
 
 .imagenProducto {
@@ -435,6 +436,10 @@ main > #flexDiscos > article > a > img:hover  {
 
 .imagenProducto {
     min-height: 150px;
+}
+
+button {
+    margin-top: auto;
 }
 
 ul {
