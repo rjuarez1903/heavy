@@ -74,7 +74,7 @@ for (let prod of productos) {
     divProd.append(button);
 
     // El botón agrega productos al carrito y a su vez imprime en pantalla un aviso
-    button.addEventListener('click', Agregar)
+    button.addEventListener('click', agregar)
     button.addEventListener('click', function(){
         aviso.style.display = 'block';
     })
@@ -132,7 +132,7 @@ for (let prod of productos) {
 }
 
 //Función para agregar productos al carrito
-function Agregar (e) {
+function agregar (e) {
 
     // Obtengo los datos del producto
     let idProd          = e.target.dataset.id;
@@ -177,11 +177,11 @@ function Agregar (e) {
     localStorage.setItem('infoCarrito', JSON.stringify(carrito));
 
     console.log(carrito);
-    Mostrar();
+    mostrar();
 }  
 
 // Función para mostrar los elementos agregados en el carrito
-function Mostrar() {
+function mostrar() {
     // Me fijo si existe información en localStorage
     if (localStorage.getItem('infoCarrito') != null) {
         carrito = JSON.parse(localStorage.getItem('infoCarrito'));
@@ -203,14 +203,14 @@ function Mostrar() {
         let btnEliminar       = d.createElement('button');
         btnEliminar.innerHTML = ' - ';
         btnEliminar.setAttribute('data-id', item.id);
-        btnEliminar.setAttribute('onclick', 'Eliminar('+item.id+');');
+        btnEliminar.setAttribute('onclick', 'eliminar('+item.id+');');
         btnEliminar.className = 'btn btn-outline-dark';
 
         //Creo un botón para agregar productos
         let btnAgregar = document.createElement('button');
         btnAgregar.innerHTML = ' + ';
         btnAgregar.setAttribute('data-id', item.id);
-        btnAgregar.setAttribute('onclick', 'AgregarProd('+item.id+');'); 
+        btnAgregar.setAttribute('onclick', 'agregarProd('+item.id+');'); 
         btnAgregar.className = 'btn btn-outline-dark';
 
         hr                   = d.createElement('hr');
@@ -223,7 +223,7 @@ function Mostrar() {
         li.setAttribute('data-id', item.id);
         divProd1.setAttribute('style', 'display: flex; justify-content: space-between; align-items: center;');
         divProd1.setAttribute('id', 'prodContainer');
-        total += parseInt(item.precio)*(item.cantidad);
+        total    += parseInt(item.precio)*(item.cantidad);
         cantidad += parseInt(item.cantidad);
     }   
 
@@ -240,7 +240,7 @@ function Mostrar() {
         vaciarCarrito.setAttribute  = ('type', 'button');
         vaciarCarrito.className     = 'btn btn-dark';
         vaciarCarrito.innerHTML     = 'Empty Cart'
-        vaciarCarrito.addEventListener('click', Vaciar);
+        vaciarCarrito.addEventListener('click', vaciar);
         divCarrito.append(vaciarCarrito);
     }
 
@@ -249,7 +249,7 @@ function Mostrar() {
 }
 
 // Función para eliminar productos desde el carrito
-function Eliminar(prodId) {
+function eliminar(prodId) {
     for (let indice in carrito) {
         if (carrito[indice].id == prodId) {
             if (carrito[indice].cantidad > 1) {
@@ -265,11 +265,11 @@ function Eliminar(prodId) {
 
     // Guardo carrito en localStorage
     localStorage.setItem('infoCarrito', JSON.stringify(carrito));
-    Mostrar();
+    mostrar();
 }
 
 // Función para agregar productos desde el carrito
-function AgregarProd(prodId) {
+function agregarProd(prodId) {
     for (let indice in carrito) {
         if (carrito[indice].id == prodId) {
             // Suma 1 a la cantidad
@@ -280,15 +280,15 @@ function AgregarProd(prodId) {
 
     // Guardo carrito en localStorage
     localStorage.setItem('infoCarrito', JSON.stringify(carrito));
-    Mostrar();
+    mostrar();
 }
 
 // Función para vaciar carrito
-function Vaciar() {
+function vaciar() {
     carrito = [];
     localStorage.removeItem('infoCarrito');
     console.log('Empty');
-    Mostrar();
+    mostrar();
 }
 
-Mostrar();
+mostrar();
