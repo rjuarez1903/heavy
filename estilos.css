@@ -406,7 +406,7 @@ main > #flexDiscos > article > a > img:hover  {
     position: fixed;
     text-align: center;
     width: 100%;
-    z-index: 100;
+    z-index: 1000;
 }
 
 #merchContainer {
